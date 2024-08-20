@@ -1,0 +1,136 @@
+:root{
+    --escrita: #BFCFE7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    outline: none;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #40394A;
+}
+
+main{
+    max-width: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume{
+    display: flex;
+    padding: 10px 0;
+    gap: 40px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.resume div{
+    display: flex;
+    flex-direction: column;
+    color: var(--escrita);
+    box-shadow: 0 0 5px #000;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+}
+
+.newItem{
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.divDesc, .divType, .divAmount{
+    display: flex;
+    flex-direction: column;
+    color: var(--escrita);
+}
+
+.newItem button{
+    background-color: #2c73d2;
+    color: var(--escrita);
+    border: none;
+    padding: 0 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 34px;
+}
+
+input, select{
+    padding: 5px;
+    background-color: #40394A;
+    border: none;
+    box-shadow: 0 0 5px #000;
+    color: var(--escrita);
+}
+
+.divTable{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    width: 98%;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+th{
+    text-align: start;
+    border-bottom: inset;
+    padding-bottom: 5px;
+    color: var(--escrita);
+}
+
+i{
+    font-size: 25px;
+}
+
+.arrow_upward{
+    color: #00c9a7;
+}
+
+.arrow_downward{
+    color: #d83121;
+}
+
+.delete{
+    color: var(--escrita);
+}
+
+.columnAction{
+    width: 40px;
+    text-align: center;
+}
+
+.columnAction button{
+    background: transparent;
+    border: none;
+}
+
+.columnAmount{
+    width: 30%;
+}
+
+.columnType{
+    width: 80%;
+    text-align: center;
+}
+
+tr{
+    color: var(--escrita);
+}

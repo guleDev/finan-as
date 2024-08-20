@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Gule's Finance</title>
+</head>
+<body>
+    <main>
+        <div class="resume">
+            <div>
+                Entradas: R$
+                <span class="incomes">0.00</span>
+            </div>
+            <div>
+                Saídas: R$
+                <span class="expenses">0.00</span>
+            </div>
+            <div>
+                Total: R$
+                <span class="total">0.00</span>
+            </div>
+        </div>
+        <div class="newItem">
+            <div class="divDesc">
+                <label for="desc">Descrição</label>
+                <input type="text" id="desc">
+            </div>
+            <div class="divAmount">
+                <label for="amount">Valor</label>
+                <input type="number" id="amount">
+            </div>
+            <div class="divType">
+                <label for="type">Tipo</label>
+                <select id="type">
+                    <option>Entrada</option>
+                    <option>Saída</option>
+                </select>
+            </div>
+            <button class="btnNew" onclick="btnNewClick()">Incluir</button>
+        </div>
+        <div class="divTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th class="columnAmount">Valor</th>
+                        <th class="columnType">Tipo</th>
+                        <th class="columnAction"></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
